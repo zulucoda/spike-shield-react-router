@@ -6,7 +6,7 @@ class HomeView extends Component {
     render(){
         return (
                 <View style={styles.container}>
-                    <Text> HOME </Text>
+                    <Text> TODAY </Text>
                 </View>
         )
     }
