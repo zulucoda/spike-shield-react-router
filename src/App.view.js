@@ -3,6 +3,8 @@ import { StyleSheet, View, Text } from 'react-native';
 import { Link, NativeRouter, Route } from 'react-router-native';
 
 import HomeContainer from './components/home/Home.container'
+import AboutContainer from './components/about/About.container'
+import TopicContainer from './components/topic/Topic.container'
 
 
 class AppView extends Component {
@@ -10,6 +12,10 @@ class AppView extends Component {
         return (
             <NativeRouter>
                 <View style={styles.container}>
+                    <Route exact path="/" component={HomeContainer}/>
+                    <Route path="/about" component={AboutContainer}/>
+                    <Route path="/topics" component={TopicContainer}/>
+
                     <View style={styles.nav}>
                         <Link
                             to="/"
@@ -30,10 +36,6 @@ class AppView extends Component {
                             <Text>Topics</Text>
                         </Link>
                     </View>
-
-                    <Route exact path="/" component={HomeContainer}/>
-                    {/*<Route path="/about" component={About}/>*/}
-                    {/*<Route path="/topics" component={Topics}/>*/}
                 </View>
             </NativeRouter>
         )
