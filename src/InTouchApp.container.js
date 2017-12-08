@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 
-import AppView from './App.view';
+import AppView from './InTouchApp.view';
 
 const mapStateToAppProps = () => {
     return {
     };
 };
 
-const AppContainer = connect(
+const InTouchAppContainer = connect(
     mapStateToAppProps,
 )(AppView);
 
-export default AppContainer;
+export default InTouchAppContainer;

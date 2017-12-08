@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import bottomNavigationReducer from '../components/navigation/bottom/BottomNavigation.reducer';
+import bottomNavigationReducer from '../components/bottom-navigation/BottomNavigation.reducer';
 
 export default combineReducers({
     bottomNavigationReducer,

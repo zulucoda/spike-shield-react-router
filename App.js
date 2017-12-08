@@ -1,26 +1,17 @@
-import React, { Component} from 'react';
-import { Provider } from 'react-redux';
-import { COLOR, ThemeProvider } from 'react-native-material-ui';
+import React, {Component} from 'react';
+import {Provider} from 'react-redux';
+import {COLOR, ThemeProvider} from 'react-native-material-ui';
 
-import { store } from './src/store/store';
-import AppContainer from './src/App.container';
-
+import {store} from './src/store/store';
+import InTouchAppContainer from './src/InTouchApp.container';
 
 const uiTheme = {
     palette: {
         primaryColor: COLOR.green500,
     },
-    toolbar: {
-        container: {
-            height: 50,
-        },
-    },
     bottomNavigation: {
         container: {
-            alignSelf: 'stretch',
-            justifyContent: 'space-between',
-            alignContent: 'stretch',
-            alignItems: 'stretch'
+            backgroundColor: COLOR.grey300
         }
     }
 };
@@ -30,7 +21,7 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <ThemeProvider uiTheme={uiTheme}>
-                    <AppContainer/>
+                    <InTouchAppContainer/>
                 </ThemeProvider>
             </Provider>
         )
