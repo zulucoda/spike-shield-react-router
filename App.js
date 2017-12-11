@@ -16,7 +16,7 @@ const uiTheme = {
     }
 };
 
-class App extends Component {
+export default class App extends Component {
     render() {
         return (
             <Provider store={store}>
@@ -27,5 +27,3 @@ class App extends Component {
         )
     }
 }
-
-export default App;

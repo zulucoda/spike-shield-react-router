@@ -6,6 +6,13 @@ import BottomNavigationContainer from './components/bottom-navigation/BottomNavi
 const styles = StyleSheet.create({
     container: {
         flex: 1
+    },
+    memes: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    memesText: {
+        textAlign: 'center'
     }
 });
 
@@ -23,8 +30,8 @@ class AppView extends Component {
     renderInTouchApp() {
         return <View style={styles.container}>
 
-            <View style={styles.container}>
-                <Text>MEMES</Text>
+            <View style={styles.memes}>
+                <Text style={styles.memesText}>MEMES</Text>
             </View>
 
             <BottomNavigationContainer/>

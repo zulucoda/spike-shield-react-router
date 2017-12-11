@@ -5,11 +5,9 @@ import { Link } from 'react-router-native';
 
 export default class BottomNavigationView extends Component {
     render() {
-        console.log('active:', this.props.active);
         return (
             <BottomNavigation active={this.props.active} hidden={this.props.isHidden}>
-                <BottomNavigation.Action
-                    key="today"
+                <BottomNavigation.Action                    key="today"
                     icon="today"
                     label="Today"
                     onPress={() => {

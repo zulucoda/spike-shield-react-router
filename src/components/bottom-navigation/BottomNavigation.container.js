@@ -12,7 +12,7 @@ function mapStateToProps({ bottomNavigationReducer }) {
 }
 
 function mapDispatchToProps(dispatch) {
-    bindActionCreators(
+    return bindActionCreators(
         {
             setNavigation
         },
