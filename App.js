@@ -7,7 +7,7 @@ import InTouchAppContainer from './src/InTouchApp.container';
 
 const uiTheme = {
     palette: {
-        primaryColor: COLOR.green500,
+        primaryColor: COLOR.green500
     },
     bottomNavigation: {
         container: {
