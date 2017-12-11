@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-import BottomNavigationContainer from './components/bottom-navigation/BottomNavigation.container';
+import BottomNavigationContainer from './components/bottom-navigation/bottom-navigation.container';
 
 const styles = StyleSheet.create({
     container: {
