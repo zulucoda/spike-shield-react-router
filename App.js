@@ -13,6 +13,19 @@ const uiTheme = {
         container: {
             backgroundColor: COLOR.grey300
         }
+    },
+    button: {
+        container: {
+            margin: 50
+        }
+    },
+    subHeader: {
+        container: {
+            justifyContent: 'center',
+            flex: 1,
+            flexDirection: 'row',
+            textAlign: 'center'
+        }
     }
 };
 

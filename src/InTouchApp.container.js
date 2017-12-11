@@ -2,8 +2,10 @@ import { connect } from 'react-redux';
 
 import AppView from './InTouchApp.view';
 
-function mapStateToAppProps() {
-    return {};
+function mapStateToProps(state) {
+    return {
+        isLoggedIn: state.loginReducer.isLoggedIn
+    };
 }
 
-export default connect(mapStateToAppProps)(AppView);
+export default connect(mapStateToProps)(AppView);

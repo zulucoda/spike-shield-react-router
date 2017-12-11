@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
+import Login from './components/login/Login.container';
+
 import BottomNavigationContainer from './components/bottom-navigation/BottomNavigation.container';
 
 const styles = StyleSheet.create({
@@ -23,7 +25,9 @@ class AppView extends Component {
     }
 
     render() {
-        // TODO: Add login check
+        if (!this.props.isLoggedIn){
+            return <Login/>;
+        }
         return this.renderInTouchApp();
     }
 
