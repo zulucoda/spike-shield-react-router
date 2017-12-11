@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
 import BottomNavigationContainer from './components/bottom-navigation/BottomNavigation.container';
 
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     },
     memes: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     memesText: {
         textAlign: 'center'
@@ -28,14 +28,15 @@ class AppView extends Component {
     }
 
     renderInTouchApp() {
-        return <View style={styles.container}>
+        return (
+            <View style={styles.container}>
+                <View style={styles.memes}>
+                    <Text style={styles.memesText}>MEMES</Text>
+                </View>
 
-            <View style={styles.memes}>
-                <Text style={styles.memesText}>MEMES</Text>
+                <BottomNavigationContainer />
             </View>
-
-            <BottomNavigationContainer/>
-        </View>;
+        );
     }
 }
 

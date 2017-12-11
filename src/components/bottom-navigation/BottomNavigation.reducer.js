@@ -9,7 +9,7 @@ export function setNavigation(payload) {
     return {
         type: SET_NAVIGATION,
         payload
-    }
+    };
 }
 
 export default function bottomNavigationReducer(state = initialState, action) {
@@ -17,7 +17,7 @@ export default function bottomNavigationReducer(state = initialState, action) {
         case SET_NAVIGATION: {
             return {
                 active: action.payload.active
-            }
+            };
         }
         default:
             return state;
