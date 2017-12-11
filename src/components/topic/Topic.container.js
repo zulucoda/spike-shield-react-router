@@ -2,13 +2,9 @@ import { connect } from 'react-redux';
 
 import TopicView from './Topic.view';
 
-const mapStateToAppProps = (state) => {
+function mapStateToAppProps(state) {
     return {
     };
-};
+}
 
-const TopicContainer = connect(
-    mapStateToAppProps,
-)(TopicView);
-
-export default TopicContainer;
+export default connect(mapStateToAppProps)(TopicView);

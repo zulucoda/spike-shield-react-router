@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-class HomeView extends Component {
+export default class HomeView extends Component {
 
     render(){
         return (
@@ -18,5 +18,3 @@ const styles = StyleSheet.create({
         padding: 10,
     }
 });
-
-export default HomeView;

@@ -3,8 +3,7 @@ import { BottomNavigation } from 'react-native-material-ui';
 import { Link } from 'react-router-native';
 
 
-class BottomNavigationView extends Component {
-
+export default class BottomNavigationView extends Component {
     render() {
         console.log('active:', this.props.active);
         return (
@@ -40,5 +39,3 @@ class BottomNavigationView extends Component {
         );
     }
 }
-
-export default BottomNavigationView;

@@ -2,13 +2,8 @@ import { connect } from 'react-redux';
 
 import HomeView from './Home.view';
 
-const mapStateToAppProps = (state) => {
-    return {
-    };
-};
+function mapStateToAppProps(state) {
+    return {};
+}
 
-const HomeContainer = connect(
-    mapStateToAppProps,
-)(HomeView);
-
-export default HomeContainer;
+export default connect(mapStateToAppProps)(HomeView);

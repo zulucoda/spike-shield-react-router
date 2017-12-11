@@ -1,4 +1,3 @@
-
 const initialState = {
     active: 'today',
     isHidden: false
@@ -6,12 +5,14 @@ const initialState = {
 
 const SET_NAVIGATION = 'SET_NAVIGATION';
 
-export const setNavigation = payload => ({
-   type: SET_NAVIGATION,
-   payload
-});
+export function setNavigation(payload) {
+    return {
+        type: SET_NAVIGATION,
+        payload
+    }
+}
 
-const bottomNavigationReducer = (state = initialState, action) => {
+export default function bottomNavigationReducer(state = initialState, action) {
     switch (action.type) {
         case SET_NAVIGATION: {
             return {
@@ -21,6 +22,4 @@ const bottomNavigationReducer = (state = initialState, action) => {
         default:
             return state;
     }
-};
-
-export default bottomNavigationReducer;
+}

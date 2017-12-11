@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React, {Component} from 'react';
+import {StyleSheet, View, Text} from 'react-native';
 
-class AboutView extends Component {
-
-    render(){
+export default class AboutView extends Component {
+    render() {
         return (
-                <View style={styles.container}>
-                    <Text> ABOUT </Text>
-                </View>
+            <View style={styles.container}>
+                <Text> ABOUT </Text>
+            </View>
         )
     }
 }
@@ -18,5 +17,3 @@ const styles = StyleSheet.create({
         padding: 10,
     }
 });
-
-export default AboutView;

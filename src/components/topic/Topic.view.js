@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React, {Component} from 'react';
+import {StyleSheet, View, Text} from 'react-native';
 
-class TopicView extends Component {
+export default class TopicView extends Component {
 
-    render(){
+    render() {
         return (
-                <View style={styles.container}>
-                    <Text> Topic </Text>
-                </View>
+            <View style={styles.container}>
+                <Text> Topic </Text>
+            </View>
         )
     }
 }
@@ -18,5 +18,3 @@ const styles = StyleSheet.create({
         padding: 10,
     }
 });
-
-export default TopicView;
