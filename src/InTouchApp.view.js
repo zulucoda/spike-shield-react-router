@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     }
 });
 
-class AppView extends Component {
+export default class AppView extends Component {
     constructor(props) {
         super(props);
         this.renderInTouchApp = this.renderInTouchApp.bind(this);
@@ -43,5 +43,3 @@ class AppView extends Component {
         );
     }
 }
-
-export default AppView;
